@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Галерея</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/header&footer.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+              <div class="languages">
+                <span><a href="#" id="select">RU</a></span> | <span><a href="indexEN.html" >EN</a></span>
+              </div>
+            </div>
+  
+            <div class="col-xl-8 col-lg-8 col-md-9 col-sm-11" id="nav">
+                <ul class="menu">
+                  <li><a href="restaurant.html" id="submenu" class="light">РЕСТОРАН</a></li>
+                  <li><a href="#" class="light">ПРОЕКТЫ</a></li>
+                  <li><a href="menu.html" class="light">МЕНЮ</a></li>
+                  <a href="index.html"><img src="assets/img/logo2.png" class="logo" alt=""></a>
+                  <li><a href="restaurant.html" class="light">СОБЫТИЯ</a></li>
+                  <li><a href="gallery.html" id="submenu2" class="menu-select">ГАЛЕРЕЯ</a></li>
+                  <li><a href="contacts.html" class="light">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+  
+            <div class="col-xl-1 col-lg-3 col-md-1">
+              <!-- <button class="btn" type="submit">ПРИЛОЖЕНИЕ</button> -->
+              <a class="btn" href="https://vc.ru/u/407907-artyom-shurygin/183016-kak-stat-pilotom-chto-nuzhno-dlya-postupleniya-v-letnoe-uchilishche-grazhdanskaya-aviaciya" target="_blank">ПРИЛОЖЕНИЕ</a>
+            </div>
+  
+            <div class="col-xl-2" >
+              <button data-modal class="btn2" type="submit">ЗАРЕЗЕРВИРОВАТЬ</button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="submenu_1" onmouseover=subOpen()>
+          <ul class="submenu__1">
+            <li><a href="restaurant.html">ПРЕССА О НАС</a></li>
+            <li><a href="restaurant.html">НАШИ НАГРАДЫ</a></li>
+            <li><a href="restaurant.html">КЛУБНАЯ КАРТА</a></li>
+          </ul>
+        </div>
+        <!-- <div id="submenu_2" onmouseover=subOpen2()>
+            <ul class="submenu__2">
+              <li><a href="">ИНТЕРЬЕР</a></li>
+              <li><a href="">БЛЮДА</a></li>
+              <li><a href="">БАР</a></li>
+            </ul>
+        </div> -->
+
+        <div class="modal-show hide">
+            <div class="modal">
+              <h1>Зарезервировать</h1> 
+              <p data-close class="close-modal">✕</p>
+              <form action="">
+                <input type="text" placeholder="ФИО (обязательно) *">
+                <input type="text" placeholder="Номер телефона *">
+                <input type="datetime-local" placeholder="Дата визита">
+                <input type="text" placeholder="Количество гостей *">
+                <button type="submit">ОТПРАВИТЬ</button>
+              </form>
+              <div class="info-modal">
+                <p>Для подтверждения бронирования вам будет направленно письмо с подтверждением. <br><br>
+                Или позвоните по телефону: +7 (960) 916-77-77 <br><br>
+                
+                Бронирование определенного стола возможно при условии внесения депозита.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="offer__slider-wrapper">
+          <div class="offer__slider-prev"><p>←</p></div>
+          <div class="offer__slider-next"><p>→</p></div>
+          <div class="offer__slider-inner">
+            <div class="offer__slide"><img src="assets/img/gallery-1.jpeg" alt="Вечерний зал"></div>
+            <div class="offer__slide"><img src="assets/img/gallery-2.jpeg" alt="Банкетный зал"></div>
+            <div class="offer__slide"><img src="assets/img/gallery-3.jpeg" alt="Общий зал"></div>
+            <div class="offer__slide"><img src="assets/img/gallery-4.jpeg" alt="Вид заведения"></div>
+          </div>
+          <div class="btn__slider"></div>
+          <div class="btn__slider"></div>
+          <div class="btn__slider"></div>
+          <div class="btn__slider"></div>
+        </div>
+    </main>
+
+      <script src="assets/js/submenu.js"></script>
+      <script src="assets/js/gallery.js"></script>
+      <script src="assets/js/modal.js"></script>
+
+</body>
+</html>

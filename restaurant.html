@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Авиатор</title>
+    <!-- Эта ссылка загружает с CDN все необходимые файлы Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/header&footer.css">
+    <link rel="stylesheet" href="assets/css/restaurant.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+     
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+          <div class="languages">
+            <span><a href="#" id="select">RU</a></span> | <span><a href="indexEN.html" >EN</a></span>
+          </div>
+        </div>
+
+        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10" id="nav">
+            <ul class="menu">
+              <li><a href="restaurant.html" id="submenu" class="menu-select">РЕСТОРАН</a></li>
+              <li><a href="#">ПРОЕКТЫ</a></li>
+              <li><a href="menu.html">МЕНЮ</a></li>
+              <a href="index.html"><img src="assets/img/logo2.png" class="logo" alt="index.html"></a>
+              <li><a href="#" class="menu-select">СОБЫТИЯ</a></li>
+              <li><a href="gallery.html" id="submenu2">ГАЛЕРЕЯ</a></li>
+              <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xl-1 col-lg-3 col-md-1">
+          <button class="btn" type="submit">ПРИЛОЖЕНИЕ</button>
+        </div>
+
+        <div class="col-xl-2" >
+          <button data-modal class="btn2" type="submit">ЗАРЕЗЕРВИРОВАТЬ</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="submenu_1" onmouseover=subOpen()>
+      <ul class="submenu__1">
+        <li><a href="restaurant.html">ПРЕССА О НАС</a></li>
+        <li><a href="restaurant.html">НАШИ НАГРАДЫ</a></li>
+        <li><a href="restaurant.html">КЛУБНАЯ КАРТА</a></li>
+      </ul>
+    </div>
+    <div id="submenu_2" onmouseover=subOpen2()>
+        <ul class="submenu__2">
+          <li><a href="gallery.html">ИНТЕРЬЕР</a></li>
+          <li><a href="gallery.html">БЛЮДА</a></li>
+          <li><a href="gallery.html">БАР</a></li>
+        </ul>
+    </div>
+
+    <div class="wrap">
+      <div class="background__picture">
+    </div>
+
+    <div class="info-block">
+      <div class="block-left">
+        <div class="block-left__picture">
+          <img src="assets/img/info_block_1.jpg" alt="food">
+        </div>
+        <div class="block-left__text">
+          <p>04.09.2020</p>
+          <p>НОВЫЙ ДЕГУСТАЦИОННЫЙ СЕТ МЕТАМОРФОЗЫ</p>
+          <hr>
+          <button class="btn">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <div class="block-right">
+        <div class="block-right__text">
+          <p>14.08.2020</p>
+          <p>БУДУЩЕЕ НАСТУПИЛО</p>
+          <hr>
+          <button class="btn">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="block-right__picture">
+          <img src="https://whiterabbitmoscow.ru/media/k2/items/cache/2db073658ef98ff1d00d15e09c24406a_XL.jpg" alt="food">
+        </div>
+      </div>
+
+      <div class="block-left">
+        <div class="block-left__picture">
+          <img src="https://whiterabbitmoscow.ru/media/k2/items/cache/159fc61fd0fc009a5ca070136f874aef_XL.jpg" alt="food">
+        </div>
+        <div class="block-left__text">
+          <p>18.09.2020</p>
+          <p>ГАСТРОБАР</p>
+          <hr>
+          <button class="btn">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+
+      <div class="block-right">
+        <div class="block-right__text">
+          <p>14.08.2020</p>
+          <p>ПЯТЫЙ ГОД ПОДРЯД В РЕЙТИНГЕ THE WORLD’S 50 BEST RESTAURANTS</p>
+          <hr>
+          <button class="btn">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="block-right__picture">
+          <img src="https://whiterabbitmoscow.ru/media/k2/items/cache/daaafcf8e134c30f448bb4ca14d1f6c4_XL.jpg" alt="food">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal-show hide">
+      <div class="modal">
+        <h1>Зарезервировать</h1> 
+        <p data-close class="close-modal">✕</p>
+        <form action="">
+          <input type="text" placeholder="ФИО (обязательно) *">
+          <input type="text" placeholder="Номер телефона *">
+          <input type="datetime-local" placeholder="Дата визита">
+          <input type="text" placeholder="Количество гостей *">
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+        <div class="info-modal">
+          <p>Для подтверждения бронирования вам будет направленно письмо с подтверждением. <br><br>
+          Или позвоните по телефону: +7 (960) 916-77-77 <br><br>
+          
+          Бронирование определенного стола возможно при условии внесения депозита.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="title_2">
+        <p id="title">© Авиатор 2021</p>
+      </div>
+      <div class="title_1">
+        <p>Кемерово, Притомская Набережная 7, пом. 2  <a href="">|+7 (960) 916-77-77|</a></p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" ></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/submenu.js"></script>
+</body>
+
+</html>
+
+
+    
+
+      
+

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        
+      <link  rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/header&footer.css">
+      <link rel="stylesheet" href="assets/css/index.css">
+      <link rel="stylesheet" href="assets/css/modal.css">
+    
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+</head>
+<body>
+    <div class="nav_bar">
+        <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+              <div class="languages">
+                <span><a href="#" id="select">RU</a></span> | <span><a href="indexEN.html" >EN</a></span>
+              </div>
+            </div>
+  
+            <div class="col-xl-8 col-lg-8 col-md-9 col-sm-11" id="nav">
+                <ul class="menu">
+                  <li><a href="restaurant.html" id="submenu" class="light">РЕСТОРАН</a></li>
+                  <li><a href="#" class="light">ПРОЕКТЫ</a></li>
+                  <li><a href="menu.html" class="menu-select">МЕНЮ</a></li>
+                 <a href="index.html"><img src="assets/img/logo2.png" class="logo" alt=""></a>
+                  <li><a href="restaurant.html" class="light">СОБЫТИЯ</a></li>
+                  <li><a href="gallery.html" id="submenu2" class="light">ГАЛЕРЕЯ</a></li>
+                  <li><a href="contacts.html" class="light">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+  
+            <div class="col-xl-1 col-lg-3 col-md-1">
+              <!-- <button class="btn" type="submit">ПРИЛОЖЕНИЕ</button> -->
+              <a class="btn" href="https://vc.ru/u/407907-artyom-shurygin/183016-kak-stat-pilotom-chto-nuzhno-dlya-postupleniya-v-letnoe-uchilishche-grazhdanskaya-aviaciya" target="_blank">ПРИЛОЖЕНИЕ</a>
+            </div>
+  
+            <div class="col-xl-2" >
+              <button data-modal class="btn2" type="submit">ЗАРЕЗЕРВИРОВАТЬ</button>
+            </div>
+          </div>
+        </div>
+  
+      </header>
+      <div id="submenu_1" onmouseover=subOpen()>
+        <ul class="submenu__1">
+          <li><a href="restaurant.html">ПРЕССА О НАС</a></li>
+          <li><a href="restaurant.html">НАШИ НАГРАДЫ</a></li>
+          <li><a href="restaurant.html">КЛУБНАЯ КАРТА</a></li>
+        </ul>
+      </div>
+      <div id="submenu_2" onmouseover=subOpen2()>
+          <ul class="submenu__2">
+            <li><a href="gallery.html">ИНТЕРЬЕР</a></li>
+            <li><a href="gallery.html">БЛЮДА</a></li>
+            <li><a href="gallery.html">БАР</a></li>
+          </ul>
+      </div>
+      
+    </div>
+
+    <div class="menu_wrapper">
+    <div class="row">
+        <div class="col-6 left_side menu" onclick="open_drinking_menu()">
+            <div class="slider">
+                <ul class="sim-slider-list">
+                    
+                    <li class="slim-slider-element"><img src="assets/img/drink_1.jpg" alt="picture1"></li>
+                    <li class="slim-slider-element"><img src="assets/img/drink_2.jpg" alt="picture2"></li>
+                    <li class="slim-slider-element"><img src="assets/img/drink_3.jpg" alt="picture3"></li>
+            
+                </ul>
+            </div>
+           <img src="assets/img/drinks.png" alt="drinks" id="drink_title">
+        </div>
+           <div id="menu_drink_show">
+               <img src="assets/img/ico_close.png" alt="close-menu" class="close-menu" onclick="open_food_menu()">
+            <ul class="menu_list">
+                <li class="menu_element"><span  onclick="cascade_menu('Sushi')" id="menu_position_Sushi" style="cursor: pointer;">Суши</span></li>
+                <div class="cascade_menu_element" id="Sushi">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="price">Цена</td>
+                        </tr>
+                        <tr>
+                           <td><span>СВЕЖИЙ ТУНЕЦ</span></td>
+                            <td class="price">100</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div class = 'recept'>Васаби, имбирь и соевый соус 35/30г</div>
+                        </td>
+                        <td class="price"></td>
+                         </tr>
+                        <tr>
+                            <td><span>СВЕЖИЙ ЛОСОСЬ</span>
+                                </td>
+                             <td class="price">100</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Васаби, имбирь и соевый соус 35/30г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                         <tr>
+                            <td><span>ГУНКАН</span>
+                                </td>
+                             <td class="price">100</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Васаби, имбирь и соевый соус 35/30г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                    </table>
+                </div>
+                <li class="menu_element"><span onclick="cascade_menu('Salad')" id="menu_position_Salad" style="cursor: pointer;">Пицца</span></li>
+                <div class="cascade_menu_element" id="Salad">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="price">Цена</td>
+                        </tr>
+                        <tr>
+                           <td><span>Хрустящие креветки</span></td>
+                            <td class="price">1300</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div class = 'recept'>Креветочные крекеры, крем васаби,тобико 200г</div>
+                        </td>
+                        <td class="price"></td>
+                         </tr>
+                        <tr>
+                            <td><span>ЖАРЕНЫЕ ГРЕБЕШКИ</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Крем из пастернака, яблочный гель, зеленое яблоко, сорбет из водорослей 160г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                         <tr>
+                            <td><span>САЛАТ С УТКОЙ</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Листья салата, огурец, яблоко, личи, кешью, азиатский соус 180г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                    </table>
+                </div>
+                <li class="menu_element"><span onclick="cascade_menu('Soup')" id="menu_position_Soup" style="cursor: pointer;">Супы</span></li>
+                <div class="cascade_menu_element" id="Soup">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="price">Цена</td>
+                        </tr>
+                        <tr>
+                           <td><span>ОСТРЫЙ СУП С МОРЕПРОДУКТАМИ</span></td>
+                            <td class="price">1300</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div class = 'recept'>Креветки, гребешки, лосось, помидоры черри, кинза, рис 330/80/30г</div>
+                        </td>
+                        <td class="price"></td>
+                         </tr>
+                        <tr>
+                            <td><span>МИСО СУП</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Морские водоросли, грибы, тофу, кинза 250г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                         <tr>
+                            <td><span>ТЫКВЕННЫЙ КРЕМ СУП</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Зеленое масло, кокосовая эспума, имбирные чипсы 300г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                    </table>
+                </div>
+                <li class="menu_element"><span onclick="cascade_menu('First_meal')" id="menu_position_First_meal" style="cursor: pointer;">Горячие блюда</span></li>
+                <div class="cascade_menu_element" id="First_meal">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="price">Цена</td>
+                        </tr>
+                        <tr>
+                           <td><span>ЗАПЕЧЕННАЯ ПЕРЕПЕЛКА</span></td>
+                            <td class="price">1300</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div class = 'recept'>Грибы намеко и еринги, картофельное пюре с пармезаном, соус миcо 100/70/20г</div>
+                        </td>
+                        <td class="price"></td>
+                         </tr>
+                        <tr>
+                            <td><span>ЖАРЕНЫЙ ЛОСОСЬ</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Морские водоросли, грибы, тофу, кинза 250г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                         <tr>
+                            <td><span>ОВОЩНОЙ КАРРИ</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Зеленое масло, кокосовая эспума, имбирные чипсы 300г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                    </table>
+                </div>
+                <li class="menu_element"><span onclick="cascade_menu('Garnish')" id="menu_position_Garnish" style="cursor: pointer;">Гарниры</span></li>
+                <div class="cascade_menu_element" id="Garnish">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="price">Цена</td>
+                        </tr>
+                        <tr>
+                           <td><span>КАРТОФЕЛЬ ФРИ</span></td>
+                            <td class="price">1300</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div class = 'recept'>City Space кетчуп 150/50г</div>
+                        </td>
+                        <td class="price"></td>
+                         </tr>
+                        <tr>
+                            <td><span>ОВОЩИ-ГРИЛЬ</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Цуккини, перец, баклажаны, помидор, соус ткемали 150г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                         <tr>
+                            <td><span>СПАРЖА</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>100г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                    </table>
+                </div>
+                <li class="menu_element"><span onclick="cascade_menu('Desert')" id="menu_position_Desert" style="cursor: pointer;">Десерт</span></li>
+                <div class="cascade_menu_element" id="Desert">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td class="price">Цена</td>
+                        </tr>
+                        <tr>
+                           <td><span>АССОРТИ СЫРОВ</span></td>
+                            <td class="price">1300</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div class = 'recept'>Джем из инжира, виноград, чипсы детокс 150/50г</div>
+                        </td>
+                        <td class="price"></td>
+                         </tr>
+                        <tr>
+                            <td><span>ЭКЗОТИЧЕСКИЙ КРЕМ КАЛАМАНСИ</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Бергамот, банан, шоколад 150г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                         <tr>
+                            <td><span>КРАСНОЕ ЯБЛОКО</span>
+                                </td>
+                             <td class="price">1000</td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <div class = 'recept'>Ванильно-яблочный мусс, яблочный снег, ореховый штрейзель, карамельный соус 150г</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                    </table>
+                </div>
+                
+            </ul>
+        </div>
+        
+        <div class="col-6 right_side menu" onclick=open_food_menu()>
+            <div class="slider1">
+                <ul class="sim-slider-list1">
+                    
+                    <li class="slim-slider-element1"><img src="assets/img/food_1.jpg" alt="picture1"></li>
+                    <li class="slim-slider-element1"><img src="assets/img/food_2.jpg" alt="picture2"></li>
+                    <li class="slim-slider-element1"><img src="assets/img/food_3.jpg" alt="picture3"></li>
+            
+                </ul>
+            </div>
+            <img src="assets/img/eat.png" alt="food" id="food_label">
+        </div>
+            <div id="menu_food_show">
+                <img src="assets/img/ico_close.png" alt="close-menu" class="close-menu" onclick="open_drinking_menu()">
+                <ul class="menu_list">
+                    <li class="menu_element"><span  onclick="cascade_menu('Soft_drinks')" id="menu_position_Soft_drinks" style="cursor: pointer;">Безалкогольные напитки</span></li>
+                    <div class="cascade_menu_element" id="Soft_drinks">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="price">Цена</td>
+                            </tr>
+                            <tr>
+                               <td><span>Вода с газом</span></td>
+                                <td class="price">100</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <div class = 'recept'>500мл</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                            <tr>
+                                <td><span>КОКА КОЛА, КОКА КОЛА ЛАЙТ, ФАНТА, СПРАЙТ</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>500мл</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                             <tr>
+                                <td><span>ЯБЛОЧНЫЙ, ВИШНЕВЫЙ, ГРЕЙПФРУТОВЫЙ, АПЕЛЬСИНОВЫЙ, АНАНАСОВЫЙ, ТОМАТНЫЙ, ПЕРСИКОВЫЙ, КЛЮКВЕННЫЙ МОРС</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>500мл</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                        </table>
+                    </div>
+                    <li class="menu_element"><span  onclick="cascade_menu('Wine')" id="menu_position_Wine" style="cursor: pointer;">Винишко</span></li>
+                    <div class="cascade_menu_element" id="Wine">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="price">Цена</td>
+                            </tr>
+                            <tr>
+                               <td><span>SAN MARCO ROSSO ITALY</span></td>
+                                <td class="price">100</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <div class = 'recept'>Красное вино 500мл</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                            <tr>
+                                <td><span>RONDONE INZOLIA TERRE SICILIANE ITALY</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Белое вино 500мл</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                             <tr>
+                                <td><span>LUNETTA PROSECCO ITALY</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Игритсое вино 500мл</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                        </table>
+                    </div>
+                    <li class="menu_element"><span  onclick="cascade_menu('Vodka')" id="menu_position_Vodka" style="cursor: pointer;">Водочка</span></li>
+                    <div class="cascade_menu_element" id="Vodka">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="price">Цена</td>
+                            </tr>
+                            <tr>
+                               <td><span>БЕЛУГА НОБЛ</span></td>
+                                <td class="price">100</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <div class = 'recept'>Производство Россия 1л</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                            <tr>
+                                <td><span>АБСОЛЮТ</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Производство Швеция 1л</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                             <tr>
+                                <td><span>РУССКИЙ СТАНДАРТ ПЛАТИНУМ</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Производство Россия 1л</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                        </table>
+                    </div>
+                    <li class="menu_element"><span  onclick="cascade_menu('Beer')" id="menu_position_Beer" style="cursor: pointer;">Пивасик</span></li>
+                    <div class="cascade_menu_element" id="Beer">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="price">Цена</td>
+                            </tr>
+                            <tr>
+                               <td><span>КОРОНА ЭКСТРА</span></td>
+                                <td class="price">100</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <div class = 'recept'>Производство Мексика солод 1л</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                            <tr>
+                                <td><span>БУДВАЙЗЕР БУДВАР</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Производство Чехия солод 1л</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                             <tr>
+                                <td><span>КИРИН ИЧИБАН</span>
+                                    </td>
+                                 <td class="price">100</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Производство Япония солод 1л</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                        </table>
+                    </div>
+                    <li class="menu_element"><span  onclick="cascade_menu('Shots')" id="menu_position_Shots" style="cursor: pointer;">Для компании(шоты)</span></li>
+                    <div class="cascade_menu_element" id="Shots">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="price">Цена</td>
+                            </tr>
+                            <tr>
+                               <td><span>Радуга</span></td>
+                                <td class="price">1100</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <div class = 'recept'>5 шотов виски, водка, текила, ликер, виски с соком</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                            <tr>
+                                <td><span>Друзья</span>
+                                    </td>
+                                 <td class="price">1400</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>5 шотов виски, водка, текила, ликер, виски с соком</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                             <tr>
+                                <td><span>Ирландский</span>
+                                    </td>
+                                 <td class="price">1600</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>10 шотов виски, водка, текила, ликер, виски с соком</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                        </table>
+                    </div>
+                    <li class="menu_element"><span  onclick="cascade_menu('Liquor')" id="menu_position_Liquor" style="cursor: pointer;">Супер алкогольные</span></li>
+                    <div class="cascade_menu_element" id="Liquor">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="price">Цена</td>
+                            </tr>
+                            <tr>
+                               <td><span>Джин Гордос</span></td>
+                                <td class="price">4100</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <div class = 'recept'>Производство Великобритания 1л</div>
+                            </td>
+                            <td class="price"></td>
+                             </tr>
+                            <tr>
+                                <td><span>Ром капитан морган белый</span>
+                                    </td>
+                                 <td class="price">3400</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Производство Ямайка 1л</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                             <tr>
+                                <td><span>Кальвадос БЛАНШ ДЕ НОРМАНДИ</span>
+                                    </td>
+                                 <td class="price">1600</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    <div class = 'recept'>Производство Франция 1л</div>
+                                </td>
+                                <td class="price"></td>
+                                 </tr>
+                        </table>
+                    </div>
+                </ul>
+            </div>
+        
+    </div>
+    </div>
+    <div class="menubar">
+        <p>СОБЫТИЯ</p>
+        <button id="open"><img src="assets/img/Menu-icon.png" alt="МЕНЮ" class="mobile-menu"></button>
+      </div>
+     
+      <div class="cascad-menu">
+        <img src="assets/img/mobile-logo.png" alt="ice cream" class="lod" style="height: 60px;">
+        <button id="close"><img src="assets/img/close.png" alt="close" class="close"></button>
+        <ul id="cascad-menu_mobile">
+          <li><a href="#">СОБЫТИЯ</a></li>
+          <li><a href="#">РЕСТОРАН</a></li>
+          <li><a href="#">ГАЛЕРЕЯ</a></li>
+          <li><a href="#">МЕНЮ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li> 
+        </ul>
+      </div>
+
+      <div class="modal-show hide">
+        <div class="modal" style="top:0;left:0;">
+          <h1>Зарезервировать</h1> 
+          <p data-close class="close-modal">✕</p>
+          <form action="">
+            <input type="text" placeholder="ФИО (обязательно) *">
+            <input type="text" placeholder="Номер телефона *">
+            <input type="datetime-local" placeholder="Дата визита">
+            <input type="text" placeholder="Количество гостей *"> <br> 
+            <button type="submit">ОТПРАВИТЬ</button>
+          </form>
+          <div class="info-modal"> <br>
+            <p style="margin: 0 auto;">Для подтверждения бронирования вам будет направленно письмо с подтверждением. <br><br>
+            Или позвоните по телефону: +7 (960) 916-77-77 <br><br>
+            
+            Бронирование определенного стола возможно при условии внесения депозита.</p>
+          </div>
+          
+          
+        </div>
+      </div>
+
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/slider2.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/mobile.js"></script>
+    <script src="assets/js/submenu.js"></script>
+    <script src="assets/js/adaptive_menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script>new Sim()</script>
+    <script>new Sim1()</script>
+</body>
+</html>

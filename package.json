@@ -1,0 +1,23 @@
+{
+  "name": "aviator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./assets/scss -o ./assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EAI7I/Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EAI7I/Restaurant/issues"
+  },
+  "homepage": "https://github.com/EAI7I/Restaurant#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

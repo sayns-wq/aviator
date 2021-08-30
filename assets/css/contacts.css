@@ -1,0 +1,35 @@
+.contacts_name{
+text-align: center;
+font-weight: 600;
+margin: 0;
+}
+.contacts_name_wrapper{
+    border-top: 2px solid #d3a352;
+    border-bottom: 2px solid #d3a352;
+    width: 150px;
+    
+}
+
+
+.contact_info{
+   text-align: center;
+}
+.background_picture img{
+    height: 65vh;
+}
+.background_picture{
+    margin: 0;
+    margin-bottom: 30px;
+    background-image: url(https://m.alterainvest.ru/upload/iblock/2ec/2ecf774b2632753f6e4faf1312db5425.jpg);
+    background-attachment: fixed;
+    height: 65vh;
+}
+.footer{
+    position: relative;
+}
+@media (max-width: 500px){
+    .contact_info, .contacts_name{
+        color: black;
+        padding: 0;
+    }
+}

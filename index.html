@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Авиатор</title>
+    <!-- Эта ссылка загружает с CDN все необходимые файлы Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/header&footer.css">
+    <link rel="stylesheet" href="assets/css/index.css">   
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+
+<body>
+
+  <div class="desktop">
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="languages">
+              <span><a href="#" id="select">RU</a></span> | <span><a href="indexEN.html" >EN</a></span>
+            </div>
+          </div>
+
+          <div class="col-xl-8 col-lg-8 col-md-9 col-sm-11" id="nav">
+              <ul class="menu">
+                <li><a href="restaurant.html" id="submenu" class="light">РЕСТОРАН</a></li>
+                <li><a href="#" class="light">ПРОЕКТЫ</a></li>
+                <li><a href="menu.html" class="light">МЕНЮ</a></li>
+                <img src="assets/img/logo2.png" class="logo" alt="">
+                <li><a href="restaurant.html" class="light">СОБЫТИЯ</a></li>
+                <li><a href="gallery.html" id="submenu2" class="light">ГАЛЕРЕЯ</a></li>
+                <li><a href="contacts.html" class="light">КОНТАКТЫ</a></li>
+              </ul>
+          </div>
+
+          <div class="col-xl-1 col-lg-3 col-md-1">
+            <!-- <button class="btn" type="submit">ПРИЛОЖЕНИЕ</button> -->
+            <a class="btn" href="https://vc.ru/u/407907-artyom-shurygin/183016-kak-stat-pilotom-chto-nuzhno-dlya-postupleniya-v-letnoe-uchilishche-grazhdanskaya-aviaciya" target="_blank">ПРИЛОЖЕНИЕ</a>
+          </div>
+
+          <div class="col-xl-2" >
+            <button data-modal class="btn2" type="submit">ЗАРЕЗЕРВИРОВАТЬ</button>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <div id="submenu_1" onmouseover=subOpen()>
+        <ul class="submenu__1">
+          <li><a href="restaurant.html">ПРЕССА О НАС</a></li>
+          <li><a href="restaurant.html">НАШИ НАГРАДЫ</a></li>
+          <li><a href="restaurant.html">КЛУБНАЯ КАРТА</a></li>
+        </ul>
+      </div>
+      <div id="submenu_2" onmouseover=subOpen2()>
+          <ul class="submenu__2">
+            <li><a href="gallery.html">ИНТЕРЬЕР</a></li>
+            <li><a href="gallery.html">БЛЮДА</a></li>
+            <li><a href="gallery.html">БАР</a></li>
+          </ul>
+      </div>
+      <div class="sim-slider">
+        <ul class="sim-slider-list">
+          <li class="slide"><img class="sim-slider-element" src="assets/img/1.jpg" alt="1"></li>
+          <li class="slide"><img class="sim-slider-element" src="assets/img/2.jpg" alt="2"></li>
+          <li class="slide"><img class="sim-slider-element" src="assets/img/3.jpg" alt="3"></li>
+        </ul>
+        <div class="sim-slider-dots"></div>
+      </div>
+
+      <div class="events">
+        <ul class="events_1">
+          <li class="MainEvents"><a href="">Авиатор запусти новый сайт!</a></li>
+          <li><a href="">Ликуем друзья</a></li>
+        </ul>
+        <ul class="events_1">
+          <li class="MainEvents"><a href="">Авиатор запусти новый сайт!</a></li>
+          <li><a href="">Ликуем друзья</a></li>
+        </ul>
+        <ul class="events_1">
+          <li class="MainEvents"><a href="">Авиатор запусти новый сайт!</a></li>
+          <li><a href="">Ликуем друзья</a></li>
+        </ul>
+      </div>
+
+      <div class="modal-show hide">
+        <div class="modal">
+          <h1>Зарезервировать</h1> 
+          <p data-close class="close-modal">✕</p>
+          <form action="">
+            <input type="text" placeholder="ФИО (обязательно) *">
+            <input type="text" placeholder="Номер телефона *">
+            <input type="datetime-local" placeholder="Дата визита">
+            <input type="text" placeholder="Количество гостей *">
+            <button type="submit">ОТПРАВИТЬ</button>
+          </form>
+          <div class="info-modal">
+            <p>Для подтверждения бронирования вам будет направленно письмо с подтверждением. <br><br>
+            Или позвоните по телефону: +7 (960) 916-77-77 <br><br>
+            
+            Бронирование определенного стола возможно при условии внесения депозита.</p>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <div class="short-events">
+        <p>Кемерово, Притомская Набережная 7 <br> <a href="">+7 (960) 916-77-77</a> </p>
+      </div>
+    
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="title_2">
+          <p id="title">© Авиатор 2021</p>
+        </div>
+        <div class="title_1">
+          <p>Кемерово, Притомская Набережная 7 | <a href="">+7 (960) 916-77-77</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="wrapper">
+      <div class="circle">
+        <button id="footer_click">∨</button>
+      </div>
+    </div> -->
+
+  </div>
+
+  <div class="mobile">
+    <div class="menubar">
+      <p>СОБЫТИЯ</p>
+      <button id="open"><img src="assets/img/Menu-icon.png" alt="МЕНЮ" class="mobile-menu"></button>
+    </div>
+    <div class="news">
+      <p>Промокоды на доставку и специальные предложения в залах ресторанов от брендов TVOЯ Pizza delivery, «Тануки» и «Ёрш»</p>
+    </div>
+    <div class="adress">
+      <p>Кемерово, Притомская Набережная 7</p>
+      <p>+7 (960) 916-77-77</p>
+    </div>
+    <div class="cascad-menu">
+      <img src="assets/img/mobile-logo.png" alt="ice cream" class="lod">
+      <button id="close"><img src="assets/img/close.png" alt="close" class="close"></button>
+      <ul id="cascad-menu_mobile">
+        <li><a href="#">СОБЫТИЯ</a></li>
+        <li><a href="#">РЕСТОРАН</a></li>
+        <li><a href="#">ГАЛЕРЕЯ</a></li>
+        <li><a href="#">МЕНЮ</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li> 
+      </ul>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/submenu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script>new Sim()</script>
+    <script src="assets/js/mobile.js"></script>
+</body>
+
+</html>
+
+
+    
+
+      
+
